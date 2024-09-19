@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luuu Mateo Solutions S.A.S.</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f7fa;
+        }
+        header {
+            background-color: #1b3a5e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+        nav {
+            background-color: #1b3a5e;
+            padding: 1rem 0;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            border-bottom: 2px solid #4CAF50;
+            padding-bottom: 5px;
+        }
+        main {
+            padding: 4rem 3rem;
+            background-color: #ffffff;
+        }
+        section {
+            margin-bottom: 4rem;
+        }
+        h2 {
+            border-bottom: 3px solid #1b3a5e;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            color: #1b3a5e;
+        }
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 15px;
+            font-weight: 600;
+            position: relative;
+        }
+        ul li:before {
+            content: "✔";
+            color: #4CAF50;
+            position: absolute;
+            left: -20px;
+            top: 0;
+        }
+        .cta {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 28px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 25px;
+            font-weight: bold;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+        .cta:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #1b3a5e;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 50px;
+        }
+        footer p {
+            margin: 0;
+        }
+        .contact-info p {
+            margin: 5px 0;
+            font-size: 1.1rem;
+        }
+        .extra-contact {
+            margin-top: 30px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .extra-contact h3 {
+            margin-top: 0;
+        }
+        .extra-contact p {
+            margin: 5px 0;
+        }
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 10px 0;
+            }
+            main {
+                padding: 2rem;
+            }
+        }
+        /* Animations */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        /* Button Hover Animation */
+        .cta {
+            position: relative;
+            overflow: hidden;
+        }
+        .cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: left 0.3s;
+        }
+        .cta:hover::before {
+            left: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header class="fade-in">
+        <h1>Luuu Mateo Solutions S.A.S.</h1>
+        <p>Empowering Institutions with AI for a Future-Ready World</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#developments">Our Developments</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Welcome to Luuu Mateo Solutions S.A.S.</h2>
+            <p>We specialize in designing AI-driven solutions for institutions, focusing on optimizing their workflow, reducing administrative burdens, and enhancing client satisfaction through intelligent automation. Our AI-powered services allow you to streamline your operations, so you can focus on what matters most: your mission and goals.</p>
+        </section>
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>AI-powered Workflow Optimization: Improving efficiency in daily tasks with AI-driven processes.</li>
+                <li>Paperwork Reduction Solutions: Digital transformation solutions that minimize paperwork and maximize productivity.</li>
+                <li>Intelligent Client Onboarding Systems: Seamless onboarding for clients using smart AI systems.</li>
+                <li>Custom AI Project Design: Tailored AI solutions to meet the unique needs of your institution.</li>
+                <li>Data Analytics and Insights: Harnessing data to provide actionable insights and drive strategic decisions.</li>
+            </ul>
+        </section>
+        <section id="developments">
+            <h2>Our Developments</h2>
+            <h3>Completed Developments</h3>
+            <ul>
+                <li><strong>Automated Document Processing System</strong> – Successfully implemented in educational institutions to reduce manual handling of admissions and grading.</li>
+                <li><strong>AI-driven Customer Support Chatbots</strong> – Deployed for several banks, enabling 24/7 automated customer support.</li>
+                <li><strong>Smart Inventory Management System</strong> – Implemented in retail businesses to optimize stock levels and reduce wastage.</li>
+                <li><strong>Predictive Maintenance Systems</strong> – Applied in manufacturing industries to reduce downtime by predicting equipment failures.</li>
+            </ul>
+            <h3>Potential Developments</h3>
+            <ul>
+                <li><strong>AI-based Recruitment Platforms</strong> – Streamlining the hiring process using machine learning to identify top talent efficiently.</li>
+                <li><strong>Healthcare AI Diagnostics</strong> – Designing AI models to assist doctors in diagnosing medical conditions faster and with greater accuracy.</li>
+                <li><strong>AI-powered Fraud Detection</strong> – Developing solutions for financial institutions to detect and prevent fraud in real-time.</li>
+                <li><strong>AI-enabled Supply Chain Optimization</strong> – Enhancing the efficiency and responsiveness of supply chains through predictive analytics and automation.</li>
+                <li><strong>Custom AI for Personalized Learning</strong> – Implementing adaptive learning platforms for educational institutions, tailored to each student's learning style and pace.</li>
+            </ul>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>Luuu Mateo Solutions S.A.S. combines state-of-the-art artificial intelligence technologies with deep industry knowledge to deliver groundbreaking solutions. We are dedicated to helping organizations streamline their operations, increase efficiency, and elevate customer experiences. Our team is passionate about innovation and committed to excellence in every project we undertake.</p>
+            <p><strong>Development Lead: Julia Alvarez</strong> – Julia Alvarez leads our development team, bringing over 10 years of experience in AI development and project management. She ensures that every solution we build meets the highest standards of quality and innovation.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>We would love to hear from you! Whether you're looking to optimize your processes with AI or have a custom project in mind, we're ready to assist. Reach out to us and discover how we can help your institution thrive in the AI era.</p>
+            <div class="contact-info">
+                <p><strong>Address:</strong> Avenida Tecnológico Lote 1 - 02, Cancun, Mexico</p>
+                <p><strong>Email:</strong> julialeyesmx@gmail.com </p>
+                <p><strong>Phone:</strong> +52 998 103 3131</p>
+            </div>
+            <a href="#" class="cta">Get in Touch</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Luuu Mateo Solutions S.A.S. All rights reserved.</p>
+    </footer>
+</body>
+</html>
